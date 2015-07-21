@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <p>
+            <a href="#/">Back to Search</a>
+        </p>
+        <h3>Forecast for <strong>{{ city }}</strong>.</h3>
+        <hr>
+
+        <button class="btn btn-info">DAYS</button>
+        <a href="#/forecast/2"><button class="btn btn-default" data-ng-class="{ 'active': days === '2' }">2</button></a>
+        <a href="#/forecast/5"><button class="btn btn-default" data-ng-class="{ 'active': days === '5' }">5</button></a>
+        <a href="#/forecast/7"><button class="btn btn-default" data-ng-class="{ 'active': days === '7' }">7</button></a>
+
+        <hr>
+    </div>
+</div>
+
+<div data-ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(dayTimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
+        </div>
+    </div>
+</div>
