@@ -8,3 +8,5 @@ Personal Programming Projects
 - Fit-init: JavaScript (Interactive Fitness Website for people interested in learning more about exercising)
 
 - TimeTracker: RubyOnRails (Ruby On Rails web app used to keep track of companies, projects, and hours their members have completed)
+
+- Recipe-Manager: RubyOnRails (Ruby on Rails web app for users to post/browse through cooking recipes as well as rate them. Also utilizes Amazon Web Services for file/image hosting)
